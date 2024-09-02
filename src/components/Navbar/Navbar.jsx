@@ -76,7 +76,6 @@ const Navbar = () => {
             alt="Search"
           />
         </Link>
-
         <div className="group relative">
           {userData.userName ? (
             <div className="flex items-center gap-2">
