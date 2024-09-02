@@ -1,0 +1,11 @@
+{
+  "HOME": "/",
+  "COLLECTION": "collection",
+  "ABOUT": "about",
+  "CONTACT": "contact",
+  "PRODUCT": "product",
+  "CART": "cart",
+  "LOGIN": "login",
+  "PLACE_ORDER": "place-order",
+  "ORDERS": "orders"
+}
