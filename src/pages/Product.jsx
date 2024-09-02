@@ -106,19 +106,18 @@ const Product = () => {
         </div>
         <div className="flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500">
           <p>
-            An e-commerce website is an online platform that facilitates the
-            buying and selling of products or services over the internet. It
-            serves as a virtual marketplace where businesses and individuals can
-            showcase their products, interact with customers, and conduct
-            transactions without the need for a physical presence. E-commerce
-            websites have gained immense popularity due to their convenience,
-            accessibility, and the global reach they offer.
+            TrendMart offers a diverse range of high-quality products designed
+            to meet your every need. Our product descriptions provide detailed
+            information about each item, including key features, specifications,
+            and unique selling points. Our goal is to ensure you have all the
+            information needed to make an informed purchase decision.
           </p>
           <p>
-            E-commerce websites typically display products or services along
-            with detailed descriptions, images, prices, and any available
-            variations (e.g., sizes, colors). Each product usually has its own
-            dedicated page with relevant information.
+            From fashion-forward apparel to essential accessories, our
+            collection is curated to reflect the latest trends and highest
+            standards. Each product page provides comprehensive details,
+            including images and variations, to enhance your shopping
+            experience.
           </p>
         </div>
       </div>

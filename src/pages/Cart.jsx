@@ -72,7 +72,7 @@ const Cart = () => {
                         Number(e.target.value)
                       )
                 }
-                className="border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1"
+                className="border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1 text-center"
                 type="number"
                 min={1}
                 defaultValue={item.quantity}

@@ -35,7 +35,7 @@ ProductItem.propTypes = {
   ]).isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  onClick: PropTypes.func, // PropType for onClick
+  onClick: PropTypes.func, 
 };
 
 export default ProductItem;

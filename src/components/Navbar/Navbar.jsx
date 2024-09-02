@@ -67,12 +67,13 @@ const Navbar = () => {
           CONTACT
         </NavLink>
       </ul>
+
       <div className="flex items-center justify-between gap-4 sm:gap-6">
-        <Link to={route.COLLECTION}>
+        <Link to={route.COLLECTION} className="ml-auto sm:ml-0">
           <img
             onClick={() => setShowSearch(true)}
             src={assets.search_icon}
-            className="w-5 cursor-pointer"
+            className="w-4 sm:w-5 cursor-pointer"
             alt="Search"
           />
         </Link>
@@ -80,20 +81,20 @@ const Navbar = () => {
           {userData.userName ? (
             <div className="flex items-center gap-2">
               <img
-                className="w-5 cursor-pointer"
+                className="w-4 sm:w-5 cursor-pointer"
                 src={assets.profile_icon}
                 alt="Profile"
               />
-              <p className="mt-1">{userData.userName}</p>
+              <p className="mt-1 text-sm sm:text-base">{userData.userName}</p>
             </div>
           ) : (
             <Link to={route.LOGIN} className="flex items-center gap-2">
               <img
-                className="w-5 cursor-pointer"
+                className="w-4 sm:w-5 cursor-pointer"
                 src={assets.profile_icon}
                 alt="Login"
               />
-              <p>Login</p>
+              <p className="text-sm sm:text-base">Login</p>
             </Link>
           )}
           <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
@@ -117,11 +118,16 @@ const Navbar = () => {
         </div>
 
         <Link to={route.CART} className="relative">
-          <img src={assets.cart_icon} className="w-5 min-w-5" alt="Cart" />
+          <img
+            src={assets.cart_icon}
+            className="w-4 sm:w-5 min-w-4 sm:min-w-5"
+            alt="Cart"
+          />
           <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]">
             {getCardCount()}
           </p>
         </Link>
+
         <img
           onClick={() => setVisible(true)}
           src={assets.menu_icon}

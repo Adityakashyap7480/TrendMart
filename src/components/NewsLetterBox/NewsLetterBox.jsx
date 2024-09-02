@@ -8,8 +8,8 @@ const NewsLetterBox = () => {
         Subscribe now & get 20% off
       </p>
       <p className="text-gray-400 mt-3">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
+        Sign up now to receive a 20% discount on your next purchase and stay
+        updated with our latest offers!
       </p>
       <form
         onClick={onSubmitHandler}

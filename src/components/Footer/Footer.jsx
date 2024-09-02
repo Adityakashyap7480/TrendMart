@@ -7,10 +7,7 @@ const Footer = () => {
         <div>
           <img src={assets.logo} className="mb-4 border w-50" alt="" />
           <p className="w-full md:w-2/3 text-gray-600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+          TrendMart is your premier destination for the latest in fashion. We pride ourselves on offering a wide range of high-quality apparel and accessories that cater to every style and occasion. Explore our curated collections and stay ahead of the trends with exclusive offers and updates. Thank you for choosing TrendMart—where fashion meets excellence.
           </p>
         </div>
         <div>
