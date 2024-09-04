@@ -4,13 +4,20 @@ import Title from "../components/Title/Title";
 import { assets } from "../assets/assets";
 import CartTotal from "./../components/CartTotal/CartTotal";
 import route from "./../routes/route.json";
+import { UserContext } from "../context/UserContext";
 
 const Cart = () => {
   const { products, currency, cartItems, updateQuantity, navigate } =
     useContext(ShopContext);
-
+  const { userData } = useContext(UserContext);
   const [cartData, setCartData] = useState([]);
-
+  const handleCheckout = () => {
+    if (userData.userName) {
+      navigate(`${route.PLACE_ORDER}`);
+    } else {
+      navigate(`${route.LOGIN}`);
+    }
+  };
   useEffect(() => {
     const tempData = [];
     for (const items in cartItems) {
@@ -92,7 +99,7 @@ const Cart = () => {
           <CartTotal />
           <div className="w-full text-end">
             <button
-              onClick={() => navigate(`${route.PLACE_ORDER}`)}
+              onClick={handleCheckout}
               className="bg-black text-white text-sm my-8 px-8 py-3"
             >
               PROCEED TO CHECKOUT

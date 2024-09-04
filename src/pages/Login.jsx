@@ -1,7 +1,6 @@
-// Login.jsx
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { UserContext } from "../context/UserContext"; // Ensure correct path
+import { UserContext } from "../context/UserContext"; 
 import route from "./../routes/route.json";
 
 const Login = () => {
