@@ -16,6 +16,15 @@ const Navbar = () => {
     window.location.href = route.LOGIN;
   };
 
+  const getInitials = (fullName) => {
+    const names = fullName.split(" ");
+    if (names.length === 1) {
+      return names[0];
+    } else {
+      return names.map((name) => name.charAt(0)).join("");
+    }
+  };
+
   return (
     <div className="flex items-center justify-between py-5 font-medium">
       <Link to={route.HOME}>
@@ -85,7 +94,9 @@ const Navbar = () => {
                 src={assets.profile_icon}
                 alt="Profile"
               />
-              <p className="mt-1 text-sm sm:text-base">{userData.userName}</p>
+              <p className="mt-1 text-sm sm:text-base">
+                {getInitials(userData.userName)}
+              </p>
             </div>
           ) : (
             <Link to={route.LOGIN} className="flex items-center gap-2">
