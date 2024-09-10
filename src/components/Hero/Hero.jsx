@@ -11,7 +11,7 @@ const Hero = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
   };
 
   return (
@@ -36,48 +36,36 @@ const Hero = () => {
       <div className={styles["hero-right"]}>
         {" "}
         <Slider {...settings} className="h-full">
-          <div className="w-full h-full flex items-center justify-center">
-            <img
-              className={styles.herosliderimg}
-              src={assets.banner_icon1}
-              alt="Image 1"
-            />
-          </div>
-          <div className="w-full h-full flex items-center justify-center">
-            <img
-              className={styles.herosliderimg}
-              src={assets.banner_icon2}
-              alt="Image 2"
-            />
-          </div>
-          <div className="w-full h-full flex items-center justify-center">
-            <img
-              className={styles.herosliderimg}
-              src={assets.banner_icon3}
-              alt="Image 3"
-            />
-          </div>
-          <div className="w-full h-full flex items-center justify-center">
-            <img
-              className={styles.herosliderimg}
-              src={assets.banner_icon4}
-              alt="Image 4"
-            />
-          </div>
-          <div className="w-full h-full flex items-center justify-center">
-            <img
-              className={styles.herosliderimg}
-              src={assets.banner_icon5}
-              alt="Image 5"
-            />
-          </div>
-          <div className="w-full h-full flex items-center justify-center">
-            <img
-              className={styles.herosliderimg}
-              src={assets.banner_icon6}
-              alt="Image 6"
-            />
-          </div>
+          <img
+            className={styles.herosliderimg}
+            src={assets.banner_icon1}
+            alt="Image 1"
+          />
+          <img
+            className={styles.herosliderimg}
+            src={assets.banner_icon2}
+            alt="Image 2"
+          />
+          <img
+            className={styles.herosliderimg}
+            src={assets.banner_icon3}
+            alt="Image 3"
+          />
+          <img
+            className={styles.herosliderimg}
+            src={assets.banner_icon4}
+            alt="Image 4"
+          />
+          <img
+            className={styles.herosliderimg}
+            src={assets.banner_icon5}
+            alt="Image 5"
+          />
+          <img
+            className={styles.herosliderimg}
+            src={assets.banner_icon6}
+            alt="Image 6"
+          />
         </Slider>
       </div>
     </div>
