@@ -72,6 +72,12 @@ import contact_img from "./contact_img.png";
 import razorpay_logo from "./razorpay_logo.png";
 import stripe_logo from "./stripe_logo.png";
 import cross_icon from "./cross_icon.png";
+import banner_icon1 from "./banner img1.avif";
+import banner_icon2 from "./banner img2.webp";
+import banner_icon3 from "./banner img3.png";
+import banner_icon4 from "./banner img4.png";
+import banner_icon5 from "./banner img5.png";
+import banner_icon6 from "./banner img6.png";
 
 export const assets = {
   logo,
@@ -92,6 +98,12 @@ export const assets = {
   razorpay_logo,
   stripe_logo,
   cross_icon,
+  banner_icon1,
+  banner_icon2,
+  banner_icon3,
+  banner_icon4,
+  banner_icon5,
+  banner_icon6
 };
 
 export const products = [
